@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Weather App</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="weather.js"></script>
+  </head>
+  <body>
+    <div style="text-align: center" class="row border top-section">
+      <div class="col border">
+        <h2 class="heading">Weather Dashboard:</h2>
+        <label for="DateTextbox">Date: </label
+        ><input id="DateTextbox" type="text" />
+        <br />
+        <input id="Unit1" name="TemperatureUnit" type="radio" />
+        <label for="Unit1">Celsius: </label>
+        <input id="Unit2" name="TemperatureUnit" type="radio" />
+        <label for="Unit2">Fahrenheit: </label>
+
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+    <div class="row border body-section">
+      <div id="City1" class="col-xs-12 col-md-6 border">
+        <form style="text-align: center">
+          <label for="City1NameTextbox">City:</label
+          ><input
+            id="City1NameTextbox"
+            type="text"
+            placeholder="Enter a City Name"
+          />
+        </form>
+        <h4>Current Weather:</h4>
+        <p style="text-align: center" class="Current"></p>
+        <h4>Hourly Weather:</h4>
+        <div class="Hourly"></div>
+      </div>
+      <div id="City2" class="col-xs-12 col-md-6 border">
+        <form style="text-align: center">
+          <label>City:</label
+          ><input
+            id="City2NameTextbox"
+            type="text"
+            placeholder="Enter a City Name"
+          />
+        </form>
+        <h4>Current Weather:</h4>
+        <p style="text-align: center" class="Current"></p>
+        <h4>Hourly Weather:</h4>
+        <div class="Hourly">
+          <table>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

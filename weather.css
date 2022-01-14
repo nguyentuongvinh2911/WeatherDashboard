@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #bdd823, #23a6d5, #23d5ab);
+  background-size: 100% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+p#errorMessage {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  font-weight: 200;
+}
+.Hourly {
+  padding: 15px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+h2 {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
